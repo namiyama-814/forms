@@ -1,4 +1,5 @@
 import '@/app/globals.css';
+import Header from '@/components/Header';
 import { fontVariablesClassName } from '@/lib/fonts';
 import type { Metadata } from "next";
 
@@ -13,6 +14,7 @@ export default function RootLayout(props:{
   return (
     <html lang="ja">
       <body className={fontVariablesClassName}>
+        <Header />
         {props.children}
       </body>
     </html>
